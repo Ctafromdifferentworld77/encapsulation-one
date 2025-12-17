@@ -1,0 +1,13 @@
+class StringReverse:
+    def _init_(self, text):
+        self.text = text
+
+    def reverse_words(self):
+        words = self.text.split()        # Split string into words
+        reversed_words = words[::-1]     # Reverse the list of words
+        return " ".join(reversed_words)  # Join back into a string
+
+
+# Example usage
+s = StringReverse("Python is very easy")
+print(s.reverse_words())
